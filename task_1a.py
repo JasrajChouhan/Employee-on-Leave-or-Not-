@@ -60,9 +60,11 @@ def data_preprocessing(task_1a_dataframe):
     # Encode the "Education" column
     encoded_dataframe['Education'] = label_encoder.fit_transform(encoded_dataframe['Education'])
 
+    encoded_dataframe['JoiningYear'] = label_encoder.fit_transform(encoded_dataframe['JoiningYear'])
+    encoded_dataframe['PaymentTier'] = label_encoder.fit_transform(encoded_dataframe['PaymentTier'])
     # Encode the "City" column
     encoded_dataframe['City'] = label_encoder.fit_transform(encoded_dataframe['City'])
-
+    encoded_dataframe['Age'] = label_encoder.fit_transform(encoded_dataframe['Age'])
     # Encode the "Gender" column
     encoded_dataframe['Gender'] = label_encoder.fit_transform(encoded_dataframe['Gender'])
 
